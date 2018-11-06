@@ -53,6 +53,16 @@ payabbhi.verifyPaymentSignature({
 
 ```
 
+## Webhook Signature Verification
+Payabbhi Node library provides utility functions for verifying the webhook signature received. The snippet below demonstrates a typical usage:
+
+```js
+// Default value of replayInterval is 300
+payabbhi.verifyWebhookSignature('<payload>','<actualSignature>', '<secret>', <replayInterval>);
+
+```
+
+
 ## Promise support
 
 Payabbhi Node library supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API. Every method returns a promise which can be used instead of callbacks.
